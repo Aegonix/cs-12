@@ -1,8 +1,8 @@
 
-#? Write a function vowel_count() in python
+#? Write a function vowelCount() in python
 #? It counts and displays the number of vowels present in the input given by the user as a string.
 
-def vowel_count():
+def vowelCount():
     vowels = "aeiouAEIOU"
     string = input("Enter a string: ")
     count = 0
@@ -13,4 +13,4 @@ def vowel_count():
 
     print("Number of vowels in the string:", count)
 
-vowel_count()
+vowelCount()
