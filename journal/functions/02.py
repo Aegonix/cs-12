@@ -6,7 +6,7 @@
 def series(x, n):
     sum = 0
     for i in range(n + 1):
-        sum += x**i
+        sum += x ** i
     
     print(sum)
 
