@@ -10,11 +10,11 @@ def ISTOUPCOUNT():
         up_count = 0
 
         for word in words:
-            if word.lower() == "is":
+            if word == "IS":
                 is_count += 1
-            elif word.lower() == "to":
+            elif word == "TO":
                 to_count += 1
-            elif word.lower() == "up":
+            elif word == "UP":
                 up_count += 1
 
         print("Count of 'IS':", is_count)
