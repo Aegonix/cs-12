@@ -7,7 +7,7 @@ def count_lines():
         count = 0
 
         for line in lines:
-            if line.lower().startswith("w") or line.lower().startswith("h"):
+            if line.startswith("W") or line.startswith("H"):
                 count += 1
 
         print(count)
