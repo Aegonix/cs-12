@@ -5,7 +5,7 @@ def p_lines():
     with open("DIARY.txt") as f:
         lines = f.readlines()
         for line in lines:
-            if line.lower().startswith("p"):
+            if line.startswith("P"):
                 print(line, end="")
     
 p_lines()
