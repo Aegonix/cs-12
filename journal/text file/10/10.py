@@ -8,7 +8,7 @@ def COUNT():
         count_catholic = words.count("Catholic")
         count_mother = words.count("mother")
 
-        print("Occurences of 'Catholic':", count_catholic)
-        print("Occurences of 'mother':", count_mother)
+        print("Occurrences of 'Catholic':", count_catholic)
+        print("Occurrences of 'mother':", count_mother)
 
 COUNT()

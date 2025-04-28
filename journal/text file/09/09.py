@@ -1,6 +1,6 @@
 
 #? Write a function AMCOUNT() in Python, which reads each character of a text file STORY.txt
-#? It counts and displays the occurences of alphabets "A", "M", "a", and "m".
+#? It counts and displays the occurrences of alphabets "A", "M", "a", and "m".
 
 def AMCOUNT():
     with open("STORY.txt") as f:
