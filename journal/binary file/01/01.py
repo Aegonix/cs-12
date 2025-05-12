@@ -18,7 +18,7 @@ def createb():
 
         pickle.dump(emp_data, f)
 
-def search(emp_no):
+def Search(emp_no):
     f = open("employee.dat", "rb")
     employees = pickle.load(f)
     f.close()
@@ -33,7 +33,7 @@ def search(emp_no):
 
         if emp_details[2] < 20000:
             emp_details[2] += 2000
-            print("Added bonus of 2000 to salary")
+            print("Added bonus of 2000 to salary of", emp_details[0])
             employees[emp_no] = emp_details
             pickle.dump(employees, f)
     else:
@@ -42,4 +42,4 @@ def search(emp_no):
     f.close()
 
 createb()
-search(102)
+Search(102)
