@@ -204,16 +204,16 @@ def DELETEROLL():
 while True:
     print(
         """What would you like to do?
-(1) -> CREATE(): Creates "STUDENT.DAT"
-(2) -> DISPLAY(): Displays the complete content of the file.
-(3) -> SEARCHNAME(): Searches for a given name.
-(4) -> SEARCHID(): Searches for a given roll number.
-(5) -> APPEND(): Appends additional records to the file.
-(6) -> COUNT(): Counts total records and average marks.
-(7) -> HIGHEST(): Copies records with marks > 90 to "HIGH.DAT".
-(8) -> MODIFY(): Modifies marks < 23 by adding 10.
-(9) -> DELETE(): Deletes students in "Emerald" house.
-(10) -> DELETEROLL(): Deletes student with given roll number."""
+(1) -> Creates "STUDENT.DAT"
+(2) -> Displays the complete content of the file.
+(3) -> Searches for a given name.
+(4) -> Searches for a given roll number.
+(5) -> Appends additional records to the file.
+(6) -> Counts total records and average marks.
+(7) -> Copies records with marks > 90 to "HIGH.DAT".
+(8) -> Modifies marks < 23 by adding 10.
+(9) -> Deletes students in "Emerald" house.
+(10) -> Deletes student with given roll number."""
     )
 
     o = int(input("Enter an option: "))
