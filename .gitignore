@@ -3,3 +3,4 @@ journal/CS 12th journal.docx
 *.txt
 *.dat
 journal/**/reader.py
+*.csv
