@@ -91,7 +91,7 @@ def FAILURE():
                     float(line[3]),
                     float(line[4]),
                     float(line[5]),
-                ) < 3:
+                ) < 33:
                 failed.append(line[0])
 
     with open("fail.txt", "w") as f:
