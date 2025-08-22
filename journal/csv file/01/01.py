@@ -140,7 +140,8 @@ def DELETE():
 
 
 while True:
-    print("""Enter an option:
+    print("""
+Enter an option:
 (1) -> DISPLAY(): To display the contents of the "TOY.CSV" file.
 (2) -> SEARCH(): To search and display for given name of toy as an input by the user.
 (3) -> APPEND(): To add additional "n" records into "TOY.CSV"
