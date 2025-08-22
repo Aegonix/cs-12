@@ -20,7 +20,6 @@ def Accept(st_id, st_name, game_name, result):
         else:
             writer.writerow([st_id, st_name, game_name, result])
 
-Accept(1, "John", "Basketball", "Won")
 
 def wonCount():
     count = 0
@@ -37,4 +36,5 @@ def wonCount():
     
     print("Count:", count)
 
+Accept(99, "Arun", "Football", "Won")
 wonCount()
