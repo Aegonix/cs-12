@@ -9,16 +9,25 @@
 
 import csv
 
-def Accept(st_id, st_name, game_name, result):
-    with open("Result.csv", "a+", newline="") as f:
-        reader = csv.reader(f)
-        writer = csv.writer(f)
+def Accept():
+    n = int(input("Enter number of records: "))
 
-        if f.tell() == 0:
-            writer.writerow(["St_Id", "St_Name", "Game_Name", "Result"])
-            writer.writerow([st_id, st_name, game_name, result])
-        else:
-            writer.writerow([st_id, st_name, game_name, result])
+    for i in range(1, n + 1):
+        print("\nRecord", i)
+        st_id = int(input("Enter Student ID: "))
+        st_name = input("Enter Student Name: ")
+        game_name = input("Enter Game Name: ")
+        result = input("Enter Result (Won/Lost/Tie): ")
+
+        with open("Result.csv", "a+", newline="") as f:
+            reader = csv.reader(f)
+            writer = csv.writer(f)
+
+            if f.tell() == 0:
+                writer.writerow(["St_Id", "St_Name", "Game_Name", "Result"])
+                writer.writerow([st_id, st_name, game_name, result])
+            else:
+                writer.writerow([st_id, st_name, game_name, result])
 
 
 def wonCount():
@@ -36,5 +45,5 @@ def wonCount():
     
     print("Count:", count)
 
-Accept(99, "Arun", "Football", "Won")
+Accept()
 wonCount()
