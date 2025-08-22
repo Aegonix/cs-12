@@ -1,5 +1,5 @@
-journal/CS 12th journal.pdf
-journal/CS 12th journal.docx
+*.pdf
+*.docx
 *.txt
 *.dat
 journal/**/reader.py
