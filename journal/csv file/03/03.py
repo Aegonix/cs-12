@@ -43,7 +43,7 @@ def wonCount():
             else:
                 skipped = True
     
-    print("Count:", count)
+    print("Win Count:", count)
 
 Accept()
 wonCount()
