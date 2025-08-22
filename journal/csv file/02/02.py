@@ -132,7 +132,8 @@ def DELETE():
 
 
 while True:
-    print("""Enter an option:
+    print("""
+Enter an option:
 (1) -> CREATE(): To create a "student.csv" file.
 (2) -> DISPLAY(): To display the contents of the "student.csv" file.
 (3) -> SEARCH(): To search and display for a given name.
