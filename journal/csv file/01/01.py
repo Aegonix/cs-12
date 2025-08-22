@@ -146,7 +146,7 @@ while True:
 (3) -> APPEND(): To add additional "n" records into "TOY.CSV"
 (4) -> HIGHEST(): To copy the records of toys where the price is greater than 100, into another file called "HIGHEST.CSV"
 (5) -> MODIFY(): To modify stock of toys by adding 10 to the toys with stock less than 10
-(6) -> DELETE(): To delete all toys with category as "FUN""")
+(6) -> DELETE(): To delete all toys with category as \"FUN\"""")
     
     o = input()
 
