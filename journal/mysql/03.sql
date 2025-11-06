@@ -32,8 +32,8 @@ INSERT INTO GUIDE VALUES
 --? 3. To count the number of students who are either physics or chemistry graduate.
 --? 4. To insert a new row.
 --? 5. To increase stipend by 100 if div is 1.
---? 6. Select name, advisor from graduate, guide where graduate.subject = guide.mainstream;
---? 7. Select avg(stipend) from graduate where average >= 65;
+--? 6. SELECT NAME, ADVISOR FROM GRADUATE, GUIDE WHERE GRADUATE.SUBJECT=GUIDE.MAINSTREAM;
+--? 7. SELECT AVG(STIPEND) FROM GRADUATE WHERE AVERAGE >= 65;
 
 --* 1.
 SELECT NAME FROM GRADUATE WHERE `DIV` = 1 ORDER BY NAME;
@@ -50,8 +50,21 @@ INSERT INTO GRADUATE (SNO, NAME, STIPEND, SUBJECT, AVERAGE, `DIV`) VALUES (6, 'N
 --* 5.
 UPDATE GRADUATE SET STIPEND = STIPEND + 100 WHERE `DIV` = 1;
 
---* 6.
-SELECT NAME, ADVISOR FROM GRADUATE, GUIDE WHERE GRADUATE.SUBJECT=GUIDE.MAINSTREAM;
+--* 6. Output:
+/*
+  NAME    | ADVISOR
+----------|---------
+  KARAN   | VINOD
+  DIVAKAR | MAHESH
+  DIVYA   | ALOK
+  ARUN    | VINOD
+  SABINA  | RAJAN
+*/
 
---* 7.
-SELECT AVG(STIPEND) FROM GRADUATE WHERE AVERAGE >= 65;
+--* 7. Output:
+/*
+AVG(STIPEND)
+------------
+   550.0000 
+------------
+*/

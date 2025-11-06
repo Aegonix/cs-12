@@ -17,8 +17,7 @@ CREATE TABLE CONSUMER (
     C_ID INT PRIMARY KEY,
     CONSUMERNAME VARCHAR(30),
     ADDRESS VARCHAR(30),
-    S_ID VARCHAR(10),
-    FOREIGN KEY (S_ID) REFERENCES STATIONARY(S_ID)
+    S_ID VARCHAR(10)
 );
 
 INSERT INTO CONSUMER VALUES
@@ -32,8 +31,8 @@ INSERT INTO CONSUMER VALUES
 --? 4. To display the consumername, address from table consumer and company and price from table stationary, with their corresponding matching s_id
 --? 5. To delete all rows from stationary where company is xyz.
 --? 6. To add a new column state in table consumer.
---? 7. To select distinct address from consumer.
---? 8. To select company, max(price), min(price), count(*) from stationary group by company;
+--? 7. SELECT DISTINCT ADDRESS FROM CONSUMER;
+--? 8. SELECT COMPANY, MAX(PRICE), MIN(PRICE), COUNT(*) FROM STATIONARY GROUP BY COMPANY;
 
 --* 1.
 SELECT * FROM CONSUMER WHERE ADDRESS = 'Delhi';
@@ -53,8 +52,18 @@ DELETE FROM STATIONARY WHERE COMPANY = 'xyz';
 --* 6.
 ALTER TABLE CONSUMER ADD STATE VARCHAR(20);
 
---* 7.
-SELECT DISTINCT ADDRESS FROM CONSUMER;
+--* 7. Output:
+/*
+  ADDRESS
+-----------
+  Delhi
+  Mumbai
+*/
 
---* 8.
-SELECT COMPANY, MAX(PRICE) AS MAX_PRICE, MIN(PRICE) AS MIN_PRICE, COUNT(*) FROM STATIONARY GROUP BY COMPANY;
+--* 8. Output:
+/*
+  COMPANY | MAX(PRICE) | MIN(PRICE) | COUNT(*)
+----------|------------|------------|----------
+  Abc     |         12 |         12 |        1
+  Cam     |          7 |          7 |        1
+*/
