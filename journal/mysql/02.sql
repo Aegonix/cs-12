@@ -49,16 +49,16 @@ SELECT SHOPNAME FROM SHOP WHERE C_PERC IS NULL;
 /*
   shopname    | city   
 --------------|---------
-| S.M. Sons   | Delhi  |
-| Dharohar    | Mumbai |
-| Ripple      | Mumbai |
-| Best Stores | Delhi  |
+  S.M. Sons   | Delhi
+  Dharohar    | Mumbai
+  Ripple      | Mumbai
+  Best Stores | Delhi
 */
 
 --* 8. Output:
 /*
  shopname | is in | city
------------------------------
+----------|-------|---------
 S.M. Sons | is in | Delhi   
 Dharohar  | is in | Mumbai  
 Kriti Art | is in | Kolkatta
